@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PICTURshiteru</title>
+    <link rel="icon" type="image/vnd.icon" href="zoom.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <img src="logotransparent.png" id="logo" />
+        <div id="header_droit">
+            <h1 id="title">PICTURshiteru💗</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="interface">
+            <div class="form">
+                <input type="text" id="promptInput" placeholder="Entrez un prompt d'image..." />
+                <input type="number" id="seedInput" placeholder="Ajouter une graine" min="1" />
+                <button id="addSeedBtn">➕</button>
+                <button id="generateBtn">💗Générer</button>
+            </div>
+
+            <ul id="seedList"></ul>
+            <section id="imageContainer"></section>
+        </div>
+    </main>
+
+    <template id="imageTemplate">
+        <div class="message assistant">
+            <img />
+            <p class="caption"></p>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
